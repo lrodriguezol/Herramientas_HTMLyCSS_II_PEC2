@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+        <title>Concurso de Cocina</title>
+    </head>
+    <body>
+        <include src="./views/cabecera.html"></include>
+        <div class="portada">
+            <img class="container__imagen" src="./assets/images/plato1.jpeg" alt="Imagen plato cocinado">
+        </div>
+        <div class="container">
+            <div class="container__bloque">
+                <div class="container__bloque-1">
+                    <blockquote>Este concurso es una competición transparente y prestigiosa para cocineros aficionados residentes en España.</blockquote>
+                </div>
+                <div class="container__bloque-2">
+                    <p>La organización se hace cargo del alojamiento en habitación doble con desayuno durante los días que duren las Rondas Eliminatorias y la Gran Final según el programa establecido. Los desplazamientos y traslados correrán a cargo del concursante. La inscripción al Concurso es gratuita.</p>
+                </div>
+            </div>
+            <div class="container__lista">
+                <ol>
+                    <li>
+                        <span>Bienvenida y Ronda clasificatoria:</span>
+                        <p>Bienvenida y Ronda inicial por equipos. Se nombrará a aquellos participantes de la siguiente ronda.</p>
+                    </li>
+                    <li>
+                        <span>Ronda eliminatoria:</span>
+                        <p>Ronda en la que se batirán en duelos los participantes seleccionados en la ronda clasificatoria.</p>
+                    </li>
+                    <li>
+                        <span>Gran final:</span>
+                        <p>Gran final con los 6 mejores participantes de las rondas disputadas anteriormente.</p>
+                    </li>
+                </ol>
+            </div>
+            <blockquote>
+                Los concursantes se harán cargo de la materia prima/ingredientes para la elaboración del menú (en caso de poder utilizar algún producto de un patrocinador, se les notificará con debida antelación) así como de los utensilios necesarios para la elaboración de su menú.
+            </blockquote>
+            <p>
+                El peso total del menú para cada persona deberá oscilar entre los 500-600 gr. netos. Los pesos (kg., gr., litro, unidades, etc.) y precios que se indiquen en el escandallo han de ser brutos. El precio de coste del menú completo deberá ser, como máximo, de 35€ por persona.
+                Los finalistas seleccionados para la Gran Final, tendrán que cambiar el menú.
+            </p>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/plato4.jpeg" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/plato5.jpeg" class="d-block w-100" alt="">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            <p>
+                <strong>Descripción del concurso:</strong>
+                El concursante dispondrá de 5 horas para elaborar el menú. La entrada de cada concursante a cocinas será cada 15 minutos y por riguroso orden de sorteo. La presentación del menú será por el mismo orden de entrada y con un intervalo de 15 minutos.
+                <br>
+                <strong>Para las Rondas Eliminatorias:</strong> cada participante tendrá que elaborar 4 menús completos (3 menús para degustación de jurados y 1 menú para exposición)
+                <br>
+                <strong>Para la Gran Final:</strong> los concursantes tendrán que preparar 6 menús completos (5 menús para degustación de jurados y 1 menú para exposición).   
+                Estas cifras están supeditadas a posible cambio, en su caso se notificaría a los concursantes con la antelación suficiente que puedan necesitar.
+            </p>
+            
+            <p>Además del reconocimiento profesional y el prestigio de los ganadores, se otorgarán premios económicos a los 6 finalistas de nuestro concurso. </p>
+            <div class="container__contacto">
+                <ul class="list-group">
+                    <li class="list-group-item">1º PREMIO: 4000€</li>
+                    <li class="list-group-item">2º CLASIFICADO: 2000€</li>
+                    <li class="list-group-item">3º CLASIFICADO: 1000€</li>
+                    <li class="list-group-item">4º, 5º, 6º CLASIFICADO: 500€</li>
+                </ul>
+            </div>
+
+        </div>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
+</html>

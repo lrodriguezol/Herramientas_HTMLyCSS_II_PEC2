@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Concurso de Cocina</title>
+  </head>
+  <body> 
+    <div>
+      <include src="./views/cabecera.html"></include>
+      <div class="container container__portada">
+        <h1 class="container__title">CONCURSO DE COCINA</h1>
+        <p class="container__frase">
+          El Concurso que otorga el merecido prestigio y el reconocimiento a los grandes profesionales de nuestra cocina. ¡No lo pienses! ¡Apúntate!
+        </p>
+        <img class="container__imagenPor" src="./assets/images/portada.jpeg" alt="Imagen cartel concurso cocina">
+      </div>
+      <div class="container__contacto">
+        <p>Horario de apertura al público de nuestras instalaciones:</p>
+            <ul> 
+                <li>De Lunes a Jueves:</li>
+                <li>Mañanas: 09:00 - 13:00 horas</li>
+                <li>Tardes: 16:00 - 20:30 horas</li>
+            </ul>
+            <ul>
+                <li>Sábados y Domingos:</li>
+                <li>Cerrado</li>
+            </ul>
+      </div>
+      <include src="./views/footer.html"></include>
+    </div>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+        <title>Concurso de Cocina</title>
+    </head>
+    <body>
+        <include src="./views/cabecera.html"></include>
+        <div class="container">
+            <div class="container__title"><h1>Participantes del Concurso</h1></div>
+            <div class="container__lista">
+                <div class="container__lista-participante">
+                    <div class="container__participante-imagen">
+                        <img src="./assets/images/participante1.jpeg" alt="Imagen Marta Pérez">
+                    </div>
+                    <div class="container__participante-nombre">Marta Pérez</div>
+                    <div class="container__participante-informacion">
+						Marta es una chef experimentada que dirige su propio restaurante de cocina de autor en el centro de la ciudad. Su especialidad son los platos de fusión que combinan ingredientes locales con técnicas culinarias internacionales.
+						</div>
+                </div>
+                <div class="container__lista-participante">
+                    <div class="container__participante-imagen">
+                        <img src="./assets/images/participante2.jpeg" alt="Imagen Carlos Martín">
+                    </div>
+                    <div class="container__participante-nombre">Carlos Martín</div>
+                    <div class="container__participante-informacion">
+                        Carlos es un chef joven y prometedor que trabaja como sous chef en un restaurante de alta cocina. Le apasiona la cocina molecular y disfruta experimentando con texturas y sabores inusuales en sus platos.
+                    </div>
+                </div>
+                <div class="container__lista-participante">
+                    <div class="container__participante-imagen">
+                        <img src="./assets/images/participante3.jpeg" alt="Imagen Sara Rodríguez">
+                    </div>
+                    <div class="container__participante-nombre">Sara Rodríguez</div>
+                    <div class="container__participante-informacion">
+                        Sara es una talentosa pastelera que trabaja en una reconocida pastelería de la ciudad. Sus creaciones son conocidas por su belleza visual y su exquisito sabor, especialmente sus pasteles decorados con detalles elaborados.
+                    </div>
+                </div>
+                <div class="container__lista-participante">
+                    <div class="container__participante-imagen">
+                        <img src="./assets/images/participante4.jpeg" alt="Imagen Rosario López">
+                    </div>
+                    <div class="container__participante-nombre">Rosario López</div>
+                    <div class="container__participante-informacion">
+                        Rosario es una cocinera autodidacta que recientemente abrió su propio negocio de comida casera para llevar. Se especializa en platos tradicionales de la cocina española, con recetas que ha perfeccionado a lo largo de los años.
+                    </div>
+                </div>
+                <div class="container__lista-participante">
+                    <div class="container__participante-imagen">
+                        <img src="./assets/images/participante5.jpeg" alt="Imagen Sergio Bautista">
+                    </div>
+                    <div class="container__participante-nombre">Sergio Bautista</div>
+                    <div class="container__participante-informacion">
+                        Sergio es un chef ejecutivo en un exclusivo hotel boutique en la costa. Su cocina se centra en ingredientes frescos y locales, creando platos que destacan por su elegancia y sabor refinado.
+                    </div>
+                </div>
+                <div class="container__lista-participante">
+                    <div class="container__participante-imagen">
+                        <img src="./assets/images/participante6.jpeg" alt="Imagen Antonia Díaz">
+                    </div>
+                    <div class="container__participante-nombre">Antonia Díaz</div>
+                    <div class="container__participante-informacion">
+                      Antonia es una chef de renombre que ha trabajado en algunos de los mejores restaurantes del país. Actualmente, es consultora gastronómica y viaja por el mundo explorando nuevas tendencias culinarias para inspirar sus proyectos.
+                    </div>
+                </div>
+            </div>
+            <canvas class= "chart-participantes" id="participantesChart"></canvas>
+        </div>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
+</html>

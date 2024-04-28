@@ -1,0 +1,471 @@
+body {
+  color: $concurso-corporate !important;
+  background-color: $concurso-background;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0;
+  margin-top: 4rem;
+}
+
+/* Container query: Estilos específicos para contenedores de 600px de ancho o menos */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem; /* Cambia el padding a 1rem para contenedores de 600px o menos */
+  }
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  border-bottom: 1px solid $concurso-corporate;
+}
+
+.cabecera__logo-img {
+  height: 90%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.container__title {
+  margin: auto;
+  padding: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 40%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cabecera__menu {
+  display: flex;
+}
+
+.container__frase {
+  padding: 2rem;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-size: 1rem;
+
+}
+
+.container__contacto{
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.container__contacto ul {
+  padding: 0;
+}
+
+.container__contacto ul li {
+  list-style: none;
+}
+
+blockquote{
+  background-color: color(display-p3 0.75 0.75 0.75);
+}
+
+.container__imagen {
+  object-fit: cover;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.container__imagenPor {
+  object-fit: cover;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.cabecera__lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.cabecera__lista li {
+  margin-right: 20px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.concurso-footer {
+  text-align: center;
+  background-color: $concurso-background;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  border-top: 1px solid $concurso-corporate;
+  padding: 1% 5%;
+  width: $footer-width;
+  margin: auto;
+}
+
+.footer__logo {
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.footer__logo-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.footer__paginas-lista {
+  list-style: none;
+  display: flex;
+} 
+
+.footer__paginas-lista li {
+  margin-right: 10vh;
+}
+
+.footer__paginas-lista a{
+  text-decoration: none;
+  color: $concurso-corporate;
+}
+
+.footer__rrss-lista {
+  list-style: none;
+  display: flex;
+}
+
+.footer__rrss-lista li {
+  margin-right: 10vh;
+}
+
+.cabecera__lista a {
+  text-decoration: none;
+  color: $concurso-corporate;
+}
+
+.portada {
+  height: 45vh;
+  margin-bottom: 5%;
+}
+
+.container:has(.container__bloque) {
+  width: 55%;
+  margin-top: 1rem;
+}
+
+.container:has(.container__form) {
+  width: 50%;
+}
+
+.container__bloque {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__bloque-1 {
+  flex: 2;
+}
+
+.container :where(.container__bloque-1,blockquote){
+  font-size: 1.2rem;
+}
+
+.container__bloque-2 {
+  flex: 3;
+  margin-left: 20px;
+}
+
+.container__lista {
+  margin: 15px 0;
+  padding: 1.5rem 0;
+}
+
+.container__lista:has(ol){
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+li span {
+  font-weight: bold;
+}
+
+
+.container__lista-participante {
+  width: calc(33.333% - 20px);
+  margin: 10px 10px 35px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+
+.container__participante-nombre{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container__participante-imagen {
+  margin-bottom: 15px;
+}
+
+.container__participante-imagen img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.container__form-campo {
+  margin-bottom: 10px;
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  text-decoration-color: color(display-p3 0.75 0.75 0.75);
+}
+
+.container__form-button {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+@supports (display: grid) {
+
+  .container__portada{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 10vh 10vh 10vh 35vh 15vh;
+    max-width: unset !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: unset;
+  }
+
+  .cabecera {
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    justify-content: unset;
+  }
+
+  .cabecera__logo-img {
+    height: 90%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding-top: 1rem;
+  }
+
+  .cabecera__logo {
+    grid-row: 1;
+    grid-column: 2;
+    margin-bottom: 1px;
+  }
+
+  .container__title {
+    grid-row: 3;
+    grid-column: 3;
+    margin: 0;
+    transform: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    position: unset;
+  }
+
+  .cabecera__menu {
+    grid-row: 1;
+    grid-column: 4;
+    display: flex;
+  }
+
+  .container__frase {
+    grid-row: 4;
+    grid-column: 3;
+    margin: 0.5rem;
+    padding: 2rem;
+    text-align: unset;
+    width: unset;
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+     font-weight: bold;
+  }
+
+  .container__imagen {
+    object-fit: cover;
+    z-index: -1;
+    grid-row: 1/6;
+    grid-column: 1/5;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container__imagenPor {
+    object-fit: cover;
+    z-index: -1;
+    grid-row: 1/6;
+    grid-column: 1/5;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  .cabecera__lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .cabecera__lista li {
+    margin-right: 20px;
+  }
+
+  .concurso-footer {
+    text-align: center;
+    background-color: $concurso-background;
+    grid-template-rows: 10vh;
+    grid-template-columns: 20vw 40vw 20vw;
+    align-items: center;
+    display: grid;
+    border-top: 1px solid $concurso-corporate;
+    padding: 1% 5%;
+    width: $footer-width;
+    margin: auto;
+}
+
+  .footer__logo {
+      height: 90%;
+  }
+
+  .footer__logo-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 100%;
+  }
+
+  .footer__paginas-lista {
+    list-style: none;
+    display: flex;
+  }
+
+  .footer__paginas-lista li {
+    flex: 1;
+    margin-right: unset;
+  }
+
+  .footer__rrss-lista {
+    list-style: none;
+    display: flex;
+  }
+
+  .footer__rrss-lista li {
+    flex: 1;
+    margin-right: unset;
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-rows: 10vh 10vh 5vh 25vh 30vh;
+      grid-template-columns: 1fr 1fr 5fr 2fr;
+    }
+  }
+
+  @media (max-width: 414px) {
+
+    html {
+      display: flex;
+    }
+
+    body:has(.container__portada){
+      flex-direction: row;
+    }
+
+    .container {
+      grid-template-rows: 15vh 10vh 35vh 10vh 15vh;
+      grid-template-columns: 1fr 4fr 1fr;
+      margin-top: 3rem;
+    }
+
+    .container__title{
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    .container__frase{
+      grid-row: 3;
+      grid-column: 2;
+      font-size: 0.9rem; 
+      width: 90%;
+    }
+
+    .container__lista {
+      overflow: hidden;
+    }
+
+    .container:has(.container__bloque) {
+      width: 100%;
+    }
+
+    .container__form-campo {
+      margin-bottom: 20px;
+      gap: 15px;
+  }
+
+    .container:has(.container__form) {
+      width: 100%;
+    }
+
+    .concurso-footer{
+      grid-template-columns: 30vw 40vw 30vw;
+      padding: 0px;
+      width: 100%;
+    }
+
+    .footer__paginas-lista{
+      flex-direction: column;
+      margin-top: unset;
+      margin-bottom: unset;
+    }
+  }
+}
+
+@layer capa_portada {
+  .container__frase {
+    /* Estilos adicionales de la segunda capa */
+    font-weight: bold;
+    text-decoration: underline; 
+  }
+}
+
+@layer capa_form {
+  form label{
+    background-color: color(display-p3 0.75 0.75 0.75);
+  }
+  
+}

@@ -1,0 +1,21 @@
+{
+
+ "extends": ["stylelint-config-recommended-scss"],
+ 
+"rules": {
+  "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+  "block-no-empty": true,
+  "no-duplicate-selectors": true,
+  "selector-max-specificity": "0,2,2",
+  "declaration-block-no-duplicate-custom-properties": true,
+  "comment-no-empty": true
+  "selector-max-id": 0, // No usar IDs en selectores
+  "selector-max-compound-selectors": 3, // Limitar el número de selectores en reglas complejas
+  "max-nesting-depth": 3, // Limitar la profundidad de anidamiento
+  "declaration-block-single-line-max-declarations": 1, // Permitir solo una declaración por línea en bloques de declaración
+  "declaration-block-trailing-semicolon": "always", // Asegurarse de que siempre haya un punto y coma al final de cada declaración
+  "color-no-invalid-hex": true, // Evitar colores inválidos en formato hexadecimal
+  "font-family-no-missing-generic-family-keyword": true // Evitar fuentes que no contienen palabras clave genéricas
+ }
+
+}

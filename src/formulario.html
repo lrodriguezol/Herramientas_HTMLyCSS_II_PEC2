@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Concurso de Cocina</title>
+  </head>
+  <body>
+    <div>
+      <include src="./views/cabecera.html"></include>
+      <div class="container">
+        <div class="container__title"><h1>Formulario de inscripción/contacto</h1></div>
+        <form name="contact" class="container__form" data-netlify="true">
+            <div class="container__form-campo">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="container__form-campo">
+                <label for="surname">Primer Apellido:</label>
+                <input type="text" name="surname" id="surname"/>
+            </div>
+            <div class="container__form-campo">
+              <label for="surname2">Segundo Apellido:</label>
+              <input type="text" name="surname2" id="surname2"/>
+            </div>
+            <div class="container__form-campo">
+              <label for="fecha">Fecha Nacimiento:</label>
+              <input type="date" name="fecha" id="fecha"/>
+            </div>
+            <div class="container__form-campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+           <div class="container__form-button">
+              <div id="liveAlertPlaceholder"></div>
+              <button class="btn btn-secondary" type="button" id="liveAlertBtn">Enviar</button>
+            </div>
+        </form>
+      <div class="container__contacto">      
+            <ul> 
+              <span>Horario</span>
+                <li>Lunes a Jueves:</li>
+                <li>09:00 - 13:00 horas</li>
+                <li>16:00 - 20:30 horas</li>
+            </ul>
+            <ul>
+                <li>Sábados y Domingos:</li>
+                <li>Cerrado</li>
+            </ul>
+      </div>
+    </div>
+    <include src="./views/footer.html"></include>
+  </div>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
