@@ -20,10 +20,14 @@ body {
   margin-top: 4rem;
 }
 
-/* Container query: Estilos específicos para contenedores de 600px de ancho o menos */
+h1 {
+  font-size: pixels-to-rem(32); 
+}
+
+/* Container query: Estilo específico para contenedores de 600px de ancho o menos */
 @media (max-width: 600px) {
   .container {
-    padding: 1rem; /* Cambia el padding a 1rem para contenedores de 600px o menos */
+    padding: 1rem; 
   }
 }
 
@@ -461,7 +465,6 @@ li span {
 
 @layer capa_portada {
   .container__frase {
-    /* Estilos adicionales de la segunda capa */
     font-weight: bold;
     text-decoration: underline; 
   }

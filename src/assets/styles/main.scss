@@ -33,3 +33,8 @@
  @import "npm:@fortawesome/fontawesome-free/css/all.css";
  
  @import "bootstrap/scss/bootstrap";
+ 
+ // Función que convierte pixeles a rem. Dividimos entre 16, ya que es consiederado como el tamaño estándar aceptado en diseño web para la relación entre pixeles y rem
+@function pixels-to-rem($pix) {
+    @return $pix / 16; 
+  }
