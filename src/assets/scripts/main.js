@@ -20,6 +20,7 @@ import * as bootstrap from 'bootstrap';
 import Chart from 'chart.js/auto';
 
 
+//Código para mostrar alert al pulsar el botón del formulario
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
@@ -40,6 +41,7 @@ if (alertTrigger) {
   })
 }
 
+//Código gráfico participantes
 document.addEventListener('DOMContentLoaded', function() {
  
   var ctx = document.getElementById('participantesChart').getContext('2d');
