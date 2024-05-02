@@ -397,6 +397,7 @@ li span {
     margin-right: unset;
   }
 
+  /*Diseño orientado a tablets*/
   @media (max-width: 1024px) {
     .container {
       grid-template-rows: 10vh 10vh 5vh 25vh 30vh;
@@ -404,6 +405,7 @@ li span {
     }
   }
 
+  /*Diseño orientado a móviles*/
   @media (max-width: 414px) {
 
     html {
@@ -450,7 +452,7 @@ li span {
     }
 
     .concurso-footer{
-      grid-template-columns: 30vw 40vw 30vw;
+      grid-template-columns: 20vw 40vw 30vw;
       padding: 0px;
       width: 100%;
     }
@@ -460,6 +462,12 @@ li span {
       margin-top: unset;
       margin-bottom: unset;
     }
+
+    .footer__rrss-lista {
+      padding:0px;
+      text-align: left;
+    }
+
   }
 }
 
