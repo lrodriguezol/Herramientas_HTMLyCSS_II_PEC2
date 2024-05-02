@@ -24,7 +24,6 @@ h1 {
   font-size: pixels-to-rem(32); 
 }
 
-/* Container query: Estilo específico para contenedores de 600px de ancho o menos */
 @media (max-width: 600px) {
   .container {
     padding: 1rem; 
